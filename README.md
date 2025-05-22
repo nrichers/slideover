@@ -2,9 +2,9 @@
 
 Adds content overlays that _slide over_ the existing slide to Quarto Revealjs presentations — hence the `.slideover` moniker.
 
-The motivation behind this extension was our nascent training portal at ValidMind, which uses Revealjs presentations authored with Quarto to overlay instructional content on top of Jupyter Notebooks or the live product. CSS modals had to be carefully positioned to avoid interference but somehow still managed to get in the way. This extension solves that issue.
+This extension was created to overlay instructional content on Jupyter Notebooks and web apps in ValidMind's training portal. It provides a cleaner alternative to CSS modals that often interfere with the underlying content.
 
-![An animation that shows slide-overs in action, first auto-collapsing and then being toggled.](slideover.gif)
+![Demonstration of slide-overs auto-collapsing and being manually toggled](slideover.gif)
 
 ## Demo
 
