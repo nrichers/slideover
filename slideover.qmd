@@ -1,6 +1,6 @@
 ---
 title: "Slideover"
-subtitle: "Collapsible content overlays for Quarto Reveal.js"
+subtitle: "Collapsible content overlays for Quarto Revealjs"
 format: 
   revealjs:
     progress: false
@@ -13,7 +13,7 @@ format:
 <br><br>Yup, that's it.
 
 ::: {.slideover--b}
-Enable collapsible overlays in Quarto Reveal.js presentations:
+Enable collapsible overlays in Quarto Revealjs presentations:
 
 ```code
 format: 
