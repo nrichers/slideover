@@ -16,9 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: quarto-dev/quarto-actions/setup@v2
-      - name: Build site
+      - name: Build Slideover demo
         run: quarto render slideover.qmd --output-dir _site
-      - uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-          path: _site 
+      - name: Publish to GitHub Pages
+        run: quarto publish gh-pages _site --no-render 
