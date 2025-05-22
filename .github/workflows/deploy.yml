@@ -18,5 +18,8 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@v2
       - name: Build Slideover demo
         run: quarto render slideover.qmd --output-dir _site --output index.html
-      - name: Publish to GitHub Pages
-        run: quarto publish gh-pages _site --no-render 
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site 
