@@ -14,8 +14,6 @@ Try the [live demo](https://nrichers.github.io/slideover/) to see slideover in a
 - Slides over the presentation from the right or bottom
 - Optional auto-collapse after 5 seconds
 - Mobile responsive
-- Provides basic text styling
-- Works with other extensions, like Tachyons
 
 ## Installation
 
