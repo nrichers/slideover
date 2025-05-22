@@ -34,8 +34,6 @@ format:
       - slideover
 ```
 
-Then add a div with the `.slideover` class:
-
 For bottom slide-overs, use `.slideover--b`:
 
 ```md
