@@ -1,8 +1,6 @@
-# Slideover Extension for Quarto Reveal.js Presentations
+# Slideover Extension for Quarto Reveal Presentations
 
-Adds content overlays that _slide over_ the existing slide to Quarto Revealjs presentations — hence the `.slideover` moniker.
-
-This extension was created to overlay instructional content on Jupyter Notebooks and web apps in ValidMind's training portal. It provides a cleaner alternative to CSS modals that often interfere with the underlying content.
+This extension provides collapsible content overlays that slide over the existing slide. It was originally created to overlay instructional content on Jupyter Notebooks and web apps. The extension offers a cleaner alternative to static CSS modals, which often interfere with the underlying content.
 
 ![Demonstration of slide-overs auto-collapsing and being manually toggled](slideover.gif)
 
