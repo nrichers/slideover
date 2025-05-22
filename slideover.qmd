@@ -6,7 +6,6 @@ format:
     progress: false
     revealjs-plugins: 
       - slideover
-alias: index.html
 ---
 
 # From the bottom, toggle manually
