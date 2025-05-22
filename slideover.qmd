@@ -1,0 +1,69 @@
+---
+title: "Slideover"
+subtitle: "Collapsible content overlays for Quarto Reveal.js"
+format: 
+  revealjs:
+    progress: false
+    revealjs-plugins: 
+      - slideover
+---
+
+# From the bottom, toggle manually
+
+<br><br>Yup, that's it.
+
+::: {.slideover--b}
+Enable collapsible overlays in Quarto Reveal.js presentations:
+
+```code
+format: 
+  revealjs:
+    revealjs-plugins: 
+      - slideover
+```
+
+**Usage example**
+
+```code
+::: {.slideover--b}
+Slideover text.
+:::
+```
+:::
+
+
+# From the bottom, auto-collapse
+
+Toggles the slideover after five seconds.
+
+::: {.slideover--b .auto-collapse}
+Add `.auto-collapse` to the slideover:
+
+```code
+::: {.slideover--b .auto-collapse}
+Slideover text that collapses after five seconds.
+:::
+```
+:::
+
+# From the<br>right,toggle<br>manually
+
+::: {.slideover--r}
+
+This content slides over from the right side of the slide.
+
+**Usage example**
+
+```code
+::: {.slideover--r}
+Slideover text.
+:::
+```
+
+**Tips & tricks**
+
+- Slideover provides only limited styling support.<br>For example, **bolding** and _italics_ are supported.
+- For better styling, use [Tachyons Extension For Quarto](https://github.com/nareal/tachyons).
+- Headings have special meaning to Quarto and Pandoc and are NOT supported inside slideovers.
+
+:::
