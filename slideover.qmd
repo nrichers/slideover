@@ -3,6 +3,7 @@ title: "Slideover"
 subtitle: "Collapsible content overlays for Quarto Revealjs"
 format: 
   revealjs:
+    controls: true
     progress: false
     revealjs-plugins: 
       - slideover
