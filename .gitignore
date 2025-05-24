@@ -2,4 +2,6 @@
 node_modules/
 *.log
 
-/.quarto/
+/.quarto
+/slideover_files/
+*.html

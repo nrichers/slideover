@@ -61,6 +61,42 @@ Slideover text.
 :::
 ```
 
+:::
+
+# One more thing,<br>for the lefties.
+
+::: {.slideover--l .auto-collapse}
+
+Content can also slide over from the left side, sinisterly.
+
+**Usage example**
+
+```code
+::: {.slideover--l}
+Slideover text from the left.
+:::
+```
+
+Yes, it's OK to be _sinister_. Take it from someone who is a left-handed and who was forced to write with his right hand.
+
+> The idea that left is sinister comes from Latin, where _sinister_ simply meant "left" but gradually took on meanings like "unlucky" or "evil".
+
+:::
+
+# And from the top, too.
+
+::: {.slideover--t}
+
+Content can also slide over from the top.
+
+**Usage example**
+
+```code
+::: {.slideover--t}
+Slideover text from the top.
+:::
+```
+
 **Tips & tricks**
 
 - Slideover provides only limited styling support.<br>For example, **bolding** and _italics_ are supported.

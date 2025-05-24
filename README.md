@@ -50,9 +50,27 @@ This is an example that slides content over from the bottom and then auto-collap
 :::
 ```
 
+For right slide-overs, use `.slideover--r`:
+
 ```md
 ::: {.slideover--r}
 This is an example that slides content over from the right.
+:::
+```
+
+For left slide-overs, use `.slideover--l`:
+
+```md
+::: {.slideover--l}
+This is an example that slides content over from the left.
+:::
+```
+
+For top slide-overs, use `.slideover--t`:
+
+```md
+::: {.slideover--t}
+This is an example that slides content over from the top.
 :::
 ```
 
@@ -60,7 +78,7 @@ This is an example that slides content over from the right.
 
 - Slideover provides basic styling support for **bold** and _italic_ text
 - For advanced styling, use [Tachyons Extension For Quarto](https://github.com/nareal/tachyons)
-- Headings are NOT supported inside slideovers due to Quarto and Pandoc limitations
+- Headings have special meaning to Quarto and Pandoc and are NOT supported inside slideovers.
 
 ## License
 
