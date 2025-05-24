@@ -61,17 +61,11 @@ Slideover text.
 :::
 ```
 
-**Tips & tricks**
-
-- Slideover provides only limited styling support.<br>For example, **bolding** and _italics_ are supported.
-- For better styling, use [Tachyons Extension For Quarto](https://github.com/nareal/tachyons).
-- Headings have special meaning to Quarto and Pandoc and are NOT supported inside slideovers.
-
 :::
 
 # One more thing,<br>for the lefties.
 
-::: {.slideover--l}
+::: {.slideover--l .auto-collapse}
 
 Content can also slide over from the left side, sinisterly.
 
@@ -86,3 +80,27 @@ Slideover text from the left.
 Yes, it's OK to be _sinister_. Take it from someone who is a left-handed and who was forced to write with his right hand.
 
 > The idea that left is sinister comes from Latin, where _sinister_ simply meant "left" but gradually took on meanings like "unlucky" or "evil".
+
+:::
+
+# And from the top, too.
+
+::: {.slideover--t}
+
+Content can also slide over from the top.
+
+**Usage example**
+
+```code
+::: {.slideover--t}
+Slideover text from the top.
+:::
+```
+
+**Tips & tricks**
+
+- Slideover provides only limited styling support.<br>For example, **bolding** and _italics_ are supported.
+- For better styling, use [Tachyons Extension For Quarto](https://github.com/nareal/tachyons).
+- Headings have special meaning to Quarto and Pandoc and are NOT supported inside slideovers.
+
+:::

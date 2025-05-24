@@ -62,7 +62,7 @@ var Plugin = {
             const currentSlide = reveal.getCurrentSlide();
             if (!currentSlide) return;
 
-            const overlays = currentSlide.querySelectorAll('.slideover--r, .slideover--b, .slideover--l');
+            const overlays = currentSlide.querySelectorAll('.slideover--r, .slideover--b, .slideover--l, .slideover--t');
             console.log('Found overlays in current slide:', overlays.length);
             
             overlays.forEach((overlay, index) => {
@@ -83,6 +83,9 @@ var Plugin = {
                 }
                 if (overlay.classList.contains('slideover--l')) {
                     content.classList.add('slideover--l');
+                }
+                if (overlay.classList.contains('slideover--t')) {
+                    content.classList.add('slideover--t');
                 }
                 
                 // Create header
