@@ -68,3 +68,21 @@ Slideover text.
 - Headings have special meaning to Quarto and Pandoc and are NOT supported inside slideovers.
 
 :::
+
+# One more thing,<br>for the lefties.
+
+::: {.slideover--l}
+
+Content can also slide over from the left side, sinisterly.
+
+**Usage example**
+
+```code
+::: {.slideover--l}
+Slideover text from the left.
+:::
+```
+
+Yes, it's OK to be _sinister_. Take it from someone who is a left-handed and who was forced to write with his right hand.
+
+> The idea that left is sinister comes from Latin, where _sinister_ simply meant "left" but gradually took on meanings like "unlucky" or "evil".
