@@ -62,7 +62,7 @@ var Plugin = {
             const currentSlide = reveal.getCurrentSlide();
             if (!currentSlide) return;
 
-            const overlays = currentSlide.querySelectorAll('.slideover--r, .slideover--b');
+            const overlays = currentSlide.querySelectorAll('.slideover--r, .slideover--b, .slideover--l, .slideover--t');
             console.log('Found overlays in current slide:', overlays.length);
             
             overlays.forEach((overlay, index) => {
@@ -81,6 +81,12 @@ var Plugin = {
                 if (overlay.classList.contains('slideover--r')) {
                     content.classList.add('slideover--r');
                 }
+                if (overlay.classList.contains('slideover--l')) {
+                    content.classList.add('slideover--l');
+                }
+                if (overlay.classList.contains('slideover--t')) {
+                    content.classList.add('slideover--t');
+                }
                 
                 // Create header
                 const header = document.createElement('div');
@@ -89,7 +95,7 @@ var Plugin = {
                 // Create toggle 
                 const toggle = document.createElement('div');
                 toggle.classList.add('slideover__toggle');
-                if (overlay.classList.contains('slideover--r')) {
+                if (overlay.classList.contains('slideover--r') || overlay.classList.contains('slideover--l')) {
                     // Left/right double chevron
                     toggle.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M4.84 7.41L9.42 12l-4.58 4.59L6.25 18l6-6-6-6z M15.84 7.41L20.42 12l-4.58 4.59L17.25 18l6-6-6-6z" stroke="currentColor"></path></svg>';
                 } else {
