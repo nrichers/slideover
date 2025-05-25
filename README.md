@@ -23,7 +23,7 @@ Install the extension with:
 quarto add nrichers/slideover
 ```
 
-## Usage
+## Usage examples
 
 To enable, add the extension to your YAML front matter:
 
@@ -34,43 +34,43 @@ format:
       - slideover
 ```
 
-For bottom slide-overs, use `.slideover--b`:
+Then add a slideover:
 
 ```md
 ::: {.slideover--b}
-This is an example that slides content over from the bottom.
+Slides content over from the bottom.
 :::
 ```
 
-For auto-collapsing slide-overs, add the `.auto-collapse` class:
 
 ```md
 ::: {.slideover--b .auto-collapse}
-This is an example that slides content over from the bottom and then auto-collapses after five seconds.
+Slides content over from the bottom and then auto-collapses after five seconds.
 :::
 ```
 
-For right slide-overs, use `.slideover--r`:
+```md
+::: {.slideover--b .auto-collapse-10}
+Slideover from the bottom that auto-collapses after 10 seconds.
+:::
+```
+
 
 ```md
 ::: {.slideover--r}
-This is an example that slides content over from the right.
+Slides content over from the right.
 :::
 ```
-
-For left slide-overs, use `.slideover--l`:
 
 ```md
 ::: {.slideover--l}
-This is an example that slides content over from the left.
+Slides content over from the left.
 :::
 ```
 
-For top slide-overs, use `.slideover--t`:
-
 ```md
 ::: {.slideover--t}
-This is an example that slides content over from the top.
+Slides content over from the top.
 :::
 ```
 
@@ -78,7 +78,7 @@ This is an example that slides content over from the top.
 
 - Slideover provides basic styling support for **bold** and _italic_ text
 - For advanced styling, use [Tachyons Extension For Quarto](https://github.com/nareal/tachyons)
-- Headings have special meaning to Quarto and Pandoc and are NOT supported inside slideovers.
+- Headings have special meaning in Quarto Revealjs presentations and are NOT supported inside slideovers.
 
 ## License
 

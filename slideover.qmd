@@ -37,17 +37,26 @@ Slideover text.
 
 Toggles the slideover after five seconds.
 
-::: {.slideover--b .auto-collapse}
+::: {.slideover--b .auto-collapse-10}
 Add `.auto-collapse` to the slideover:
 
 ```code
 ::: {.slideover--b .auto-collapse}
-Slideover text that collapses after five seconds.
+Slideover text that collapses after five seconds by default.
 :::
 ```
+
+Or, control the delay by suffixing a delay in second, like `.auto-collapse-10`:
+
+```code
+::: {.slideover--b .auto-collapse-10}
+Slideover text that auto-collapses after 10 seconds.
+:::
+``` 
+
 :::
 
-# From the<br>right,toggle<br>manually
+# From the <br>right, toggle <br>manually
 
 ::: {.slideover--r}
 
@@ -63,9 +72,9 @@ Slideover text.
 
 :::
 
-# One more thing,<br>for the lefties.
+# One for the lefties.
 
-::: {.slideover--l .auto-collapse}
+::: {.slideover--l .auto-collapse-10}
 
 Content can also slide over from the left side, sinisterly.
 
@@ -83,11 +92,11 @@ Yes, it's OK to be _sinister_. Take it from someone who is a left-handed and who
 
 :::
 
-# And from the top, too.
+# <br>And from the top, too.
 
 ::: {.slideover--t}
 
-Content can also slide over from the top.
+And, finally, content can also slide over from the top.
 
 **Usage example**
 
@@ -101,6 +110,6 @@ Slideover text from the top.
 
 - Slideover provides only limited styling support.<br>For example, **bolding** and _italics_ are supported.
 - For better styling, use [Tachyons Extension For Quarto](https://github.com/nareal/tachyons).
-- Headings have special meaning to Quarto and Pandoc and are NOT supported inside slideovers.
+- Headings have special meaning in Quarto Revealjs presentations and are NOT supported inside slideovers.
 
 :::
