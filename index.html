@@ -219,33 +219,37 @@
 <section id="from-the-bottom-auto-collapse" class="title-slide slide level1 center">
 <h1>From the bottom, auto-collapse</h1>
 <p>Toggles the slideover after five seconds.</p>
-<div class="slideover--b auto-collapse">
+<div class="slideover--b auto-collapse-10">
 <p>Add <code>.auto-collapse</code> to the slideover:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource code number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href=""></a>::: {.slideover--b .auto-collapse}</span>
-<span id="cb3-2"><a href=""></a>Slideover text that collapses after five seconds.</span>
+<span id="cb3-2"><a href=""></a>Slideover text that collapses after five seconds by default.</span>
 <span id="cb3-3"><a href=""></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-
-<section id="from-the-righttoggle-manually" class="title-slide slide level1 center">
-<h1>From the<br>right,toggle<br>manually</h1>
-<div class="slideover--r">
-<p>This content slides over from the right side of the slide.</p>
-<p><strong>Usage example</strong></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource code number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href=""></a>::: {.slideover--r}</span>
-<span id="cb4-2"><a href=""></a>Slideover text.</span>
+<p>Or, control the delay by suffixing a delay in second, like <code>.auto-collapse-10</code>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource code number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href=""></a>::: {.slideover--b .auto-collapse-10}</span>
+<span id="cb4-2"><a href=""></a>Slideover text that auto-collapses after 10 seconds.</span>
 <span id="cb4-3"><a href=""></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 
-<section id="one-more-thing-for-the-lefties." class="title-slide slide level1 center">
-<h1>One more thing,<br>for the lefties.</h1>
-<div class="slideover--l auto-collapse">
+<section id="from-the-right-toggle-manually" class="title-slide slide level1 center">
+<h1>From the <br>right, toggle <br>manually</h1>
+<div class="slideover--r">
+<p>This content slides over from the right side of the slide.</p>
+<p><strong>Usage example</strong></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource code number-lines code-with-copy"><code class="sourceCode"><span id="cb5-1"><a href=""></a>::: {.slideover--r}</span>
+<span id="cb5-2"><a href=""></a>Slideover text.</span>
+<span id="cb5-3"><a href=""></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+
+<section id="one-for-the-lefties." class="title-slide slide level1 center">
+<h1>One for the lefties.</h1>
+<div class="slideover--l auto-collapse-10">
 <p>Content can also slide over from the left side, sinisterly.</p>
 <p><strong>Usage example</strong></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource code number-lines code-with-copy"><code class="sourceCode"><span id="cb5-1"><a href=""></a>::: {.slideover--l}</span>
-<span id="cb5-2"><a href=""></a>Slideover text from the left.</span>
-<span id="cb5-3"><a href=""></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource code number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a href=""></a>::: {.slideover--l}</span>
+<span id="cb6-2"><a href=""></a>Slideover text from the left.</span>
+<span id="cb6-3"><a href=""></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Yes, it’s OK to be <em>sinister</em>. Take it from someone who is a left-handed and who was forced to write with his right hand.</p>
 <blockquote>
 <p>The idea that left is sinister comes from Latin, where <em>sinister</em> simply meant “left” but gradually took on meanings like “unlucky” or “evil”.</p>
@@ -254,18 +258,18 @@
 </section>
 
 <section id="and-from-the-top-too." class="title-slide slide level1 center">
-<h1>And from the top, too.</h1>
+<h1><br>And from the top, too.</h1>
 <div class="slideover--t">
-<p>Content can also slide over from the top.</p>
+<p>And, finally, content can also slide over from the top.</p>
 <p><strong>Usage example</strong></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource code number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a href=""></a>::: {.slideover--t}</span>
-<span id="cb6-2"><a href=""></a>Slideover text from the top.</span>
-<span id="cb6-3"><a href=""></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource code number-lines code-with-copy"><code class="sourceCode"><span id="cb7-1"><a href=""></a>::: {.slideover--t}</span>
+<span id="cb7-2"><a href=""></a>Slideover text from the top.</span>
+<span id="cb7-3"><a href=""></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Tips &amp; tricks</strong></p>
 <ul>
 <li>Slideover provides only limited styling support.<br>For example, <strong>bolding</strong> and <em>italics</em> are supported.</li>
 <li>For better styling, use <a href="https://github.com/nareal/tachyons">Tachyons Extension For Quarto</a>.</li>
-<li>Headings have special meaning to Quarto and Pandoc and are NOT supported inside slideovers.</li>
+<li>Headings have special meaning in Quarto Revealjs presentations and are NOT supported inside slideovers.</li>
 </ul>
 </div>
 
