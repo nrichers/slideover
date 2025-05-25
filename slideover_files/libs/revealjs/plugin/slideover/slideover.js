@@ -139,9 +139,9 @@ var Plugin = {
                     let autoCollapseTimer;
                     let userExpanded = false;
                     
-                    // Get delay from auto-collapse-{ms} class or use default 5000ms
+                    // Get delay from auto-collapse-{s} class or use default 5s
                     const delayClass = Array.from(overlay.classList).find(cls => cls.startsWith('auto-collapse-'));
-                    const delay = delayClass ? parseInt(delayClass.replace('auto-collapse-', '')) : 5000;
+                    const delay = delayClass ? parseInt(delayClass.replace('auto-collapse-', '')) * 1000 : 5000;
                     
                     // Function to reset the timer
                     function resetAutoCollapseTimer(element) {
