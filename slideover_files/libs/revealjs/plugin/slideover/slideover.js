@@ -135,13 +135,9 @@ var Plugin = {
                 });
                 
                 // Add auto-collapse functionality if the overlay has the auto-collapse class
-                if (overlay.classList.contains('auto-collapse') || Array.from(overlay.classList).some(cls => cls.startsWith('auto-collapse-'))) {
+                if (overlay.classList.contains('auto-collapse')) {
                     let autoCollapseTimer;
                     let userExpanded = false;
-                    
-                    // Get delay from auto-collapse-{s} class or use default 5s
-                    const delayClass = Array.from(overlay.classList).find(cls => cls.startsWith('auto-collapse-'));
-                    const delay = delayClass ? parseInt(delayClass.replace('auto-collapse-', '')) * 1000 : 5000;
                     
                     // Function to reset the timer
                     function resetAutoCollapseTimer(element) {
@@ -151,7 +147,7 @@ var Plugin = {
                                 element.classList.remove('slideover__content--active');
                                 element.querySelector('.slideover__toggle').classList.remove('slideover__toggle--active');
                             }
-                        }, delay);
+                        }, 5000); // 5 seconds auto-collapse
                     }
                     
                     // Start the timer
