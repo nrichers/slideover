@@ -46,7 +46,7 @@ Slideover text that collapses after five seconds by default.
 :::
 ```
 
-Or, control the delay by suffixing a delay in second, like `.auto-collapse-10`:
+Control the delay by suffixing seconds, like `.auto-collapse-10`:
 
 ```code
 ::: {.slideover--b .auto-collapse-10}
@@ -86,7 +86,7 @@ Slideover text from the left.
 :::
 ```
 
-Yes, it's OK to be _sinister_. Take it from someone who is a left-handed and who was forced to write with his right hand.
+Yes, it's OK to be _sinister_. Take it from someone who is left-handed and was forced to write with his right hand.
 
 > The idea that left is sinister comes from Latin, where _sinister_ simply meant "left" but gradually took on meanings like "unlucky" or "evil".
 
@@ -112,4 +112,22 @@ Slideover text from the top.
 - For better styling, use [Tachyons Extension For Quarto](https://github.com/nareal/tachyons).
 - Headings have special meaning in Quarto Revealjs presentations and are NOT supported inside slideovers.
 
+:::
+
+# Mad science, it works. 
+
+::: {.slideover--l}
+Slides content over from the left.
+:::
+
+::: {.slideover--b}
+Slides content over from the bottom.
+:::
+
+::: {.slideover--r}
+Slides content over from the right.
+:::
+
+::: {.slideover--t}
+Slides content over from the top.
 :::

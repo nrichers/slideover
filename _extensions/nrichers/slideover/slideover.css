@@ -93,10 +93,9 @@
     max-height: 40vh;
     border-radius: 0 0 8px 8px;
     box-shadow: 0 2px 4px rgba(8, 62, 68, 0.1), -2px 0 4px rgba(8, 62, 68, 0.1), 2px 0 4px rgba(8, 62, 68, 0.1);
-    padding: 0 20px;
+    padding: 20px;
     text-align: left;
     overflow: hidden;
-    padding-top: 20px;
 }
 
 .slideover--t.slideover__content.slideover__content--active {
