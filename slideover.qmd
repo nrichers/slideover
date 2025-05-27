@@ -114,20 +114,28 @@ Slideover text from the top.
 
 :::
 
-# Mad science, it works. 
+# Mad science, it works.
 
-::: {.slideover--l}
-Slides content over from the left.
+::: {.slideover--l .third}
+Slides content over from the left, at at third of the size.
 :::
 
-::: {.slideover--b}
-Slides content over from the bottom.
+::: {.slideover--b .quarters}
+Slides content over from the bottom, at three-quarters of the size.
+
+You can use the size adjustments on any slideover type.
 :::
 
-::: {.slideover--r}
-Slides content over from the right.
+::: {.slideover--r .half}
+Slides content over from the right, at half-size.
 :::
 
 ::: {.slideover--t}
-Slides content over from the top.
+Slides content over from the top, with the default size at 40% width.
+
+You can additionally include the following classes to decrease the default width of the slideovers, for modals with less content:
+
+- `.quarters` — 3/4s or 75% of the default 40% width.
+- `.half` — 1/2s or 50% of the default 40% width.
+- `.third` — 1/3 or 33ish% of the default 40% width.
 :::

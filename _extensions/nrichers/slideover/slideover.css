@@ -3,11 +3,21 @@
 
 :root {
     --slideover-default-width: 40vw;
+    --slideover-quarter-width: calc(var(--slideover-default-width) * 0.75);
     --slideover-half-width: calc(var(--slideover-default-width) / 2);
+    --slideover-third-width: calc(var(--slideover-default-width) / 3);
+}
+
+.slideover__content.quarters {
+    width: var(--slideover-quarter-width) !important;
 }
 
 .slideover__content.half {
-    width: var(--slideover-half-width);
+    width: var(--slideover-half-width) !important;
+}
+
+.slideover__content.third {
+    width: var(--slideover-third-width) !important;
 }
 
 .slideover__presentation {
