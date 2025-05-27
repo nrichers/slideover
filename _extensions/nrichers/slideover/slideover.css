@@ -166,6 +166,22 @@
     transform: rotate(180deg);
 }
 
+.slideover--l .slideover__toggle {
+    transform: rotate(180deg);
+}
+
+.slideover--l .slideover__toggle--active {
+    transform: rotate(0deg);
+}
+
+.slideover--t .slideover__toggle {
+    transform: rotate(180deg);
+}
+
+.slideover--t .slideover__toggle--active {
+    transform: rotate(0deg);
+}
+
 .slideover__content-area {
     padding: 0 1.5rem 1.5rem;
     overflow-y: auto;
