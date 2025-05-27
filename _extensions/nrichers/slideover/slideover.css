@@ -1,6 +1,15 @@
 /* Import Inter font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+:root {
+    --slideover-default-width: 40vw;
+    --slideover-half-width: calc(var(--slideover-default-width) / 2);
+}
+
+.slideover__content.half {
+    width: var(--slideover-half-width);
+}
+
 .slideover__presentation {
     position: relative;
 }
@@ -40,7 +49,7 @@
     left: auto;
     height: auto;
     max-height: 80vh;
-    width: 40vw;
+    width: var(--slideover-default-width);
     max-width: 100vw;
     box-sizing: border-box;
     transform: translateY(-50%) translateX(calc(100% - 60px));
@@ -327,7 +336,7 @@
     right: auto;
     height: auto;
     max-height: 80vh;
-    width: 40vw;
+    width: var(--slideover-default-width);
     max-width: 100vw;
     box-sizing: border-box;
     transform: translateY(-50%) translateX(calc(-100% + 60px));
