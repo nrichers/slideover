@@ -117,7 +117,7 @@ Slideover text from the top.
 # Mad science, it works.
 
 ::: {.slideover--l .third}
-Slide content over from the left, at at third of the size with `.slideover--l .third`.
+Slide content over from the left, at a third of the size with `.slideover--l .third`.
 
 :::
 
