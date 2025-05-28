@@ -52,6 +52,13 @@ var Plugin = {
                     if (overlay.classList.contains(dir)) content.classList.add(dir);
                 });
 
+                // Add any additional modifier classes
+                overlay.classList.forEach(cls => {
+                    if (!['slideover--r', 'slideover--b', 'slideover--l', 'slideover--t'].includes(cls)) {
+                        content.classList.add(cls);
+                    }
+                });
+
                 const header = document.createElement('div');
                 header.classList.add('slideover__header');
                 const toggle = document.createElement('div');
