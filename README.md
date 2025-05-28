@@ -80,7 +80,7 @@ Slides content over from the top.
 - For advanced styling, use [Tachyons Extension For Quarto](https://github.com/nareal/tachyons).
 - Headings have special meaning in Quarto Revealjs presentations and are NOT supported inside slideovers.
 - You can also modify the default size (40% for right or left, 80% for top or bottom) of any of the slideovers for more or less screen real estate:
-  - `.quarters` — 3/4s or 75% of the default width.
+  - `.three-quarters` — 3/4s or 75% of the default width.
   - `.half` — 1/2s or 50% of the default width.
   - `.third` — 1/3 or 33ish% of the default width.
 
