@@ -276,17 +276,32 @@
 
 <section id="mad-science-it-works." class="title-slide slide level1 center">
 <h1>Mad science, it works.</h1>
-<div class="slideover--l">
-<p>Slides content over from the left.</p>
+<div class="slideover--l third">
+<p>Slide content over from the left, at a third of the size with <code>.slideover--l .third</code>.</p>
 </div>
-<div class="slideover--b">
-<p>Slides content over from the bottom.</p>
+<div class="slideover--b three-quarters">
+<p>Slide content over from the bottom, at three-quarters of the size.</p>
+<p>You can use the size adjustments on any slideover type.</p>
+<p><strong>Usage example</strong></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource code number-lines code-with-copy"><code class="sourceCode"><span id="cb8-1"><a href=""></a>::: {.slideover--b .three-quarters}</span>
+<span id="cb8-2"><a href=""></a>Slide content over from the bottom, at three-quarters of the size.</span>
+<span id="cb8-3"><a href=""></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="slideover--r">
-<p>Slides content over from the right.</p>
+<div class="slideover--r half">
+<p>Slide content over from the right, at half-size with <code>.slideover--r .half</code>.</p>
 </div>
 <div class="slideover--t">
-<p>Slides content over from the top.</p>
+<p>Slide content over from the top, with the default width.</p>
+<ul>
+<li><strong>Default width for left or right:</strong> 40%</li>
+<li><strong>Default width for top or bottom:</strong> 80%</li>
+</ul>
+<p>You can additionally include the following classes to decrease the default width of the slideovers, for modals with less content:</p>
+<ul>
+<li><code>.quarters</code> — 3/4s or 75% of the default width.</li>
+<li><code>.half</code> — 1/2s or 50% of the default width.</li>
+<li><code>.third</code> — 1/3 or 33ish% of the default width.</li>
+</ul>
 </div>
 
 </section>
