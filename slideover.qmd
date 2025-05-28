@@ -117,17 +117,26 @@ Slideover text from the top.
 # Mad science, it works.
 
 ::: {.slideover--l .third}
-Slide content over from the left, at at third of the size.
+Slide content over from the left, at at third of the size with `.slideover--l .third`.
+
 :::
 
 ::: {.slideover--b .quarters}
 Slide content over from the bottom, at three-quarters of the size.
 
 You can use the size adjustments on any slideover type.
+
+**Usage example**
+
+```code
+::: {.slideover--b .quarters}
+Slide content over from the bottom, at three-quarters of the size.
+:::
+```
 :::
 
 ::: {.slideover--r .half}
-Slide content over from the right, at half-size.
+Slide content over from the right, at half-size with `.slideover--r .half`.
 :::
 
 ::: {.slideover--t}
