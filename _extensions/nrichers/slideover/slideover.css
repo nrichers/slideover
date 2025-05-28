@@ -26,8 +26,8 @@
     width: var(--slideover-third-lr) !important;
 }
 
-.slideover--l.slideover__content.quarters,
-.slideover--r.slideover__content.quarters {
+.slideover--l.slideover__content.three-quarters,
+.slideover--r.slideover__content.three-quarters {
     width: var(--slideover-quarters-lr) !important;
 }
 
@@ -42,8 +42,8 @@
     width: var(--slideover-third-tb) !important;
 }
 
-.slideover--t.slideover__content.quarters,
-.slideover--b.slideover__content.quarters {
+.slideover--t.slideover__content.three-quarters,
+.slideover--b.slideover__content.three-quarters {
     width: var(--slideover-quarters-tb) !important;
 }
 

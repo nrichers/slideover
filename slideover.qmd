@@ -121,7 +121,7 @@ Slide content over from the left, at a third of the size with `.slideover--l .th
 
 :::
 
-::: {.slideover--b .quarters}
+::: {.slideover--b .three-quarters}
 Slide content over from the bottom, at three-quarters of the size.
 
 You can use the size adjustments on any slideover type.
@@ -129,7 +129,7 @@ You can use the size adjustments on any slideover type.
 **Usage example**
 
 ```code
-::: {.slideover--b .quarters}
+::: {.slideover--b .three-quarters}
 Slide content over from the bottom, at three-quarters of the size.
 :::
 ```
