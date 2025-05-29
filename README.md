@@ -76,10 +76,15 @@ Slides content over from the top.
 
 ## Tips & Tricks
 
-- Slideover provides basic styling support for **bold** and _italic_ text.
-- For advanced styling, use [Tachyons Extension For Quarto](https://github.com/nareal/tachyons).
 - Headings have special meaning in Quarto Revealjs presentations and are NOT supported inside slideovers.
-- You can also modify the default size (40% for right or left, 80% for top or bottom) of any of the slideovers for more or less screen real estate:
+- To insert a callout within a slideover, use the `.embed` class:
+  ```md
+  ::: {.slideover--l}
+  ::: {.embed}
+  This is an embedded callout within a left-aligned slideover.
+  :::
+  :::
+- You can modify the default size (40% for right or left, 80% for top or bottom) of any of the slideovers for more or less screen real estate:
   - `.three-quarters` — 3/4s or 75% of the default width.
   - `.half` — 1/2s or 50% of the default width.
   - `.third` — 1/3 or 33ish% of the default width.
@@ -90,6 +95,12 @@ Slides content over from the top.
     Slides content over from the top, at half-size.
     :::
     ```
+
+## Custom styling
+
+- Slideover provides basic styling support for elements such as: links, emphasis, embedded callouts, quotations, and code blocks.
+- To adjust basic elements in the default theme, edit [`custom-slideover.css`](_extensions/nrichers/slideover/custom-slideover.css) to your liking.
+- For advanced styling, use [Tachyons Extension For Quarto](https://github.com/nareal/tachyons).
 
 ## License
 
