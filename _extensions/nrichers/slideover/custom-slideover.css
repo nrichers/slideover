@@ -1,8 +1,39 @@
 /* Global variables */
 :root {
-    --slideover-default-bg: 40vw;
-    --slideover-default-text: 80vw;
-    --slideover-default-border: 80vw;
+    --slideover-default-bg: #eaf8fa;
+    --slideover-default-text: #083e44;
+    --slideover-default-border: 1px solid #083e44;;
+}
+
+/* Global slideover container styling */
+.slideover__content {
+    background: var(--slideover-default-bg) !important;
+    color: var(--slideover-default-text) !important;
+    border: var(--slideover-default-border) !important;
+}
+
+/* Slideover header global styling */
+.slideover__header {
+    background: var(--slideover-default-bg) !important;
+}
+
+/* Global slideover content area styling */
+.slideover__content-area {
+    background: var(--slideover-default-bg) !important;
+    color: var(--slideover-default-text) !important;
+}
+
+.slideover--b .slideover__content-area {
+    background: var(--slideover-default-bg) !important;
+}
+
+.slideover--t .slideover__content-area {
+    background: var(--slideover-default-bg) !important;
+}
+
+/* Toggle-arrow styling */
+.slideover__toggle {
+    color: var(--slideover-default-text) !important;
 }
 
 /* Right-aligned styling */
