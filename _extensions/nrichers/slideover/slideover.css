@@ -371,21 +371,26 @@
 
 /* Other elements */
 
+/* Callout embed */
+.slideover__content-area .embed {
+    margin-left: 25px;
+    padding-left: 20px;
+    padding-top: 0px;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+
 /* Quotations */
 .quote {
     font-style: italic;
-    color: #555;
-    border-left: 3px solid #083e44;
     padding-left: 1em;
     margin: 0.5em 0;
     display: inline-block;
 } 
 
 .slideover__content-area blockquote {
-    border-left: 4px solid #083e44;
     margin: 1em 0;
     padding-left: 1em;
-    color: #555;
 }
 
 /* Emphasis */
@@ -400,24 +405,20 @@
 /* Code blocks */
 .slideover__content-area div.sourceCode {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    color: #003b4f;
     font-size: 0.9em;
-    background-color: #f5fcfd;
     padding: 0.4em 0.6em;
-    border: 1px solid rgba(8, 62, 68, 0.2);
-    border-radius: 3px;
 }
 
 .slideover__content-area code {
-    background-color: #f5fcfd;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.9em;
     padding: 0.1em 0.2em;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .slideover__content-area pre.numberSource {
   margin-left: 1em;
   border-left: none;
-  background-color: #f5fcfd;
   padding-left: 4px;
 }
 
