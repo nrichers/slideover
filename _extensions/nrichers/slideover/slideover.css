@@ -381,7 +381,7 @@
 }
 
 /* Quotations */
-.quote {
+q {
     font-style: italic;
     padding-left: 1em;
     margin: 0.5em 0;
@@ -394,11 +394,13 @@
 }
 
 /* Emphasis */
-.slideover__content-area strong {
+.slideover__content-area strong,
+.slideover__content-area b {
     font-weight: 700;
 }
 
-.slideover__content-area em {
+.slideover__content-area em,
+.slideover__content-area i {
     font-style: italic;
 }
 

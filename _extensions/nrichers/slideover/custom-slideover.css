@@ -52,14 +52,16 @@
 }
 
 /* Emphasis styling */
-.slideover__content-area strong {
+.slideover__content-area strong,
+.slideover__content-area b,
+.slideover__content-area i,
+.slideover__content-area em {
     color: var(--slideover-default-accent) !important;
 }
 
 /* Quotation styling */
-.quote {
+q {
     color: var(--slideover-default-accent) !important;
-    border-left: 3px solid var(--slideover-default-text) !important;
 } 
 
 .slideover__content-area blockquote {
