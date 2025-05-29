@@ -107,10 +107,16 @@
     margin-top: -20px;
     margin-bottom: -20px;
     padding: 40px 1.5rem 1.5rem;
+    margin-top: -20px;
+    margin-bottom: -20px;
 }
 
 .slideover--r.slideover__content.slideover__content--active {
     transform: translateY(-50%) translateX(0);
+}
+
+.slideover--r .slideover__header {
+  margin: -20px 0;
 }
 
 /* Bottom-aligned slideover effects */
@@ -228,6 +234,23 @@
     stroke-width: 1px;
 }
 
+.slideover--r .slideover__toggle {
+  left: 8px;
+  right: auto;
+} 
+
+.slideover--l .slideover__toggle {
+    right: 8px;
+    left: auto;
+}
+
+.slideover--t .slideover__toggle {
+    top: auto;
+    bottom: 8px;
+    right: 8px;
+    left: auto;
+}
+
 /* Rotation logic: default (open), --active for closed */
 .slideover__content.slideover--r .slideover__toggle {
     transform: rotate(180deg); /* Open: left arrow */
@@ -293,21 +316,21 @@
     padding-block-start: 0;
 }
 
+/* Mobile widths */
 @media screen and (max-width: 800px) {
-    .slideover--r.slideover__content {
+    .slideover--r.slideover__content,
+    .slideover--l.slideover__content {
         max-height: 90vh;
         width: 90vw;
     }
-    .slideover--b.slideover__content {
-        width: 90%;
-        max-height: 60vh;
-    }
+    .slideover--b.slideover__content,
     .slideover--t.slideover__content {
         width: 90%;
         max-height: 60vh;
     }
 } 
 
+/* Other elements */
 .quote {
     font-style: italic;
     color: #555;
@@ -315,20 +338,6 @@
     padding-left: 1em;
     margin: 0.5em 0;
     display: inline-block;
-} 
-
-.slideover--r .slideover__toggle {
-  left: 8px;
-  right: auto;
-} 
-
-.slideover--r .slideover__header {
-  margin: -20px 0;
-}
-
-.slideover--r .slideover__content-area {
-  margin-top: -20px;
-  margin-bottom: -20px;
 } 
 
 .slideover__content-area strong {
@@ -410,10 +419,6 @@
     transform: translateY(-50%) translateX(0);
 }
 
-.slideover--l .slideover__toggle {
-    right: 8px;
-    left: auto;
-}
 
 .slideover--l .slideover__header {
     margin: -20px 0;
@@ -424,16 +429,3 @@
     margin-bottom: -20px;
 }
 
-@media screen and (max-width: 800px) {
-    .slideover--l.slideover__content {
-        max-height: 90vh;
-        width: 90vw;
-    }
-}
-
-.slideover--t .slideover__toggle {
-    top: auto;
-    bottom: 8px;
-    right: 8px;
-    left: auto;
-}
