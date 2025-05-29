@@ -82,6 +82,58 @@
     margin: 0;
 }
 
+/* Slideover header global styling */
+.slideover__header {
+    height: 40px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    cursor: pointer;
+    flex-shrink: 0;
+    padding: 0 8px;
+    background: #eaf8fa;
+    margin: 0;
+    position: relative;
+    z-index: 3;
+    pointer-events: auto;
+}
+
+/* Global slideover content area styling */
+.slideover__content-area {
+    padding: 0 1.5rem 1.5rem;
+    overflow-y: auto;
+    background: #eaf8fa;
+    color: #083e44;
+    line-height: 1.5;
+    margin: -40px 0 0 0;
+    position: relative;
+    z-index: 2;
+    padding-top: 25px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.slideover__content--active .slideover__content-area {
+    z-index: 3;
+}
+
+.slideover__content:not(.slideover__content--active) .slideover__content-area {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slideover__content-area p,
+.slideover__content-area div {
+    padding-block-start: 0.5em;
+}
+
+.slideover__content-area > *:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    padding-block-start: 0;
+}
+
 /* Right-aligned slideover effects */
 .slideover--r.slideover__content {
     top: 50%;
@@ -155,11 +207,6 @@
     margin: -20px 0;
 }
 
-.slideover--l .slideover__content-area {
-    margin-top: -20px;
-    margin-bottom: -20px;
-}
-
 /* Bottom-aligned slideover effects */
 .slideover--b.slideover__content {
     bottom: 0;
@@ -176,6 +223,16 @@
     overflow: hidden;
     padding-bottom: 20px;
 }
+
+.slideover--b .slideover__content-area {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: left;
+    background: #eaf8fa;
+}
+
 .slideover--b.slideover__content.slideover__content--active {
     transform: translateX(-50%) translateY(0);
 }
@@ -186,15 +243,6 @@
     margin: 0 -20px;
     border-radius: 8px 8px 0 0;
     background: transparent;
-}
-
-.slideover--b .slideover__content-area {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    text-align: left;
-    background: #eaf8fa;
 }
 
 /* Top-aligned slideover effects */
@@ -213,18 +261,6 @@
     overflow: hidden;
 }
 
-.slideover--t.slideover__content.slideover__content--active {
-    transform: translateX(-50%) translateY(0);
-}
-
-.slideover--t .slideover__header {
-    justify-content: flex-end;
-    padding-right: 16px;
-    margin: 0 -20px;
-    border-radius: 0 0 8px 8px;
-    background: transparent;
-}
-
 .slideover--t .slideover__content-area {
     margin-left: -20px;
     margin-right: -20px;
@@ -235,20 +271,16 @@
     background: #eaf8fa;
 }
 
-/* Slideover header styling */
-.slideover__header {
-    height: 40px;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    cursor: pointer;
-    flex-shrink: 0;
-    padding: 0 8px;
-    background: #eaf8fa;
-    margin: 0;
-    position: relative;
-    z-index: 3;
-    pointer-events: auto;
+.slideover--t.slideover__content.slideover__content--active {
+    transform: translateX(-50%) translateY(0);
+}
+
+.slideover--t .slideover__header {
+    justify-content: flex-end;
+    padding-right: 16px;
+    margin: 0 -20px;
+    border-radius: 0 0 8px 8px;
+    background: transparent;
 }
 
 /* Toggle-arrow styling */
@@ -292,7 +324,7 @@
     left: auto;
 }
 
-/* Rotation logic: default (open), --active for closed */
+/* Toggle rotation logic: default (open), --active for closed */
 .slideover__content.slideover--r .slideover__toggle {
     transform: rotate(180deg); /* Open: left arrow */
 }
@@ -321,41 +353,6 @@
     transform: rotate(0deg); /* Closed: down arrow */
 }
 
-/* Global slideover content area styling */
-.slideover__content-area {
-    padding: 0 1.5rem 1.5rem;
-    overflow-y: auto;
-    background: #eaf8fa;
-    color: #083e44;
-    line-height: 1.5;
-    margin: -40px 0 0 0;
-    position: relative;
-    z-index: 2;
-    padding-top: 25px;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-.slideover__content--active .slideover__content-area {
-    z-index: 3;
-}
-
-.slideover__content:not(.slideover__content--active) .slideover__content-area {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.slideover__content-area p,
-.slideover__content-area div {
-    padding-block-start: 0.5em;
-}
-
-.slideover__content-area > *:first-child {
-    margin-top: 0;
-    padding-top: 0;
-    padding-block-start: 0;
-}
 
 /* Mobile widths */
 @media screen and (max-width: 800px) {
