@@ -5,35 +5,11 @@
     --slideover-default-border: 1px solid #083e44;;
 }
 
-/* Global slideover container styling */
+/* Global slideover styling */
 .slideover__content {
     background: var(--slideover-default-bg) !important;
     color: var(--slideover-default-text) !important;
     border: var(--slideover-default-border) !important;
-}
-
-/* Slideover header global styling */
-.slideover__header {
-    background: var(--slideover-default-bg) !important;
-}
-
-/* Global slideover content area styling */
-.slideover__content-area {
-    background: var(--slideover-default-bg) !important;
-    color: var(--slideover-default-text) !important;
-}
-
-.slideover--b .slideover__content-area {
-    background: var(--slideover-default-bg) !important;
-}
-
-.slideover--t .slideover__content-area {
-    background: var(--slideover-default-bg) !important;
-}
-
-/* Toggle-arrow styling */
-.slideover__toggle {
-    color: var(--slideover-default-text) !important;
 }
 
 /* Right-aligned styling */
