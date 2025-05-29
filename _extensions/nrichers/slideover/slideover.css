@@ -119,6 +119,47 @@
   margin: -20px 0;
 }
 
+/* Left-aligned slideover effects */
+.slideover--l.slideover__content {
+    top: 50%;
+    left: 0;
+    right: auto;
+    height: auto;
+    max-height: 80vh;
+    width: var(--slideover-default-lr);
+    max-width: 100vw;
+    box-sizing: border-box;
+    transform: translateY(-50%) translateX(calc(-100% + 60px));
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+}
+
+.slideover--l .slideover__content-area {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    padding: 40px 1.5rem 1.5rem;
+}
+
+.slideover--l.slideover__content.slideover__content--active {
+    transform: translateY(-50%) translateX(0);
+}
+
+
+.slideover--l .slideover__header {
+    margin: -20px 0;
+}
+
+.slideover--l .slideover__content-area {
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
 /* Bottom-aligned slideover effects */
 .slideover--b.slideover__content {
     bottom: 0;
@@ -387,45 +428,5 @@
   border-left: none;
   background-color: #f5fcfd;
   padding-left: 4px;
-}
-
-.slideover--l.slideover__content {
-    top: 50%;
-    left: 0;
-    right: auto;
-    height: auto;
-    max-height: 80vh;
-    width: var(--slideover-default-lr);
-    max-width: 100vw;
-    box-sizing: border-box;
-    transform: translateY(-50%) translateX(calc(-100% + 60px));
-    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 0 8px 8px 0;
-    overflow: hidden;
-}
-
-.slideover--l .slideover__content-area {
-    flex: 1;
-    overflow-y: auto;
-    margin-top: -20px;
-    margin-bottom: -20px;
-    padding: 40px 1.5rem 1.5rem;
-}
-
-.slideover--l.slideover__content.slideover__content--active {
-    transform: translateY(-50%) translateX(0);
-}
-
-
-.slideover--l .slideover__header {
-    margin: -20px 0;
-}
-
-.slideover--l .slideover__content-area {
-    margin-top: -20px;
-    margin-bottom: -20px;
 }
 
