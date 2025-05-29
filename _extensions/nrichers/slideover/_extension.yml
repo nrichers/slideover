@@ -8,4 +8,5 @@ contributes:
       script:
         - slideover.js
       stylesheet:
-        - slideover.css 
+        - slideover.css
+        - custom-slideover.css
