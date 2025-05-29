@@ -134,6 +134,16 @@
     padding-block-start: 0;
 }
 
+.slideover__content-area p {
+    margin: 1em 0;
+}
+
+.slideover__content-area ul,
+.slideover__content-area ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
 /* Right-aligned slideover effects */
 .slideover--r.slideover__content {
     top: 50%;
@@ -369,6 +379,8 @@
 } 
 
 /* Other elements */
+
+/* Quotations */
 .quote {
     font-style: italic;
     color: #555;
@@ -378,6 +390,14 @@
     display: inline-block;
 } 
 
+.slideover__content-area blockquote {
+    border-left: 4px solid #083e44;
+    margin: 1em 0;
+    padding-left: 1em;
+    color: #555;
+}
+
+/* Emphasis */
 .slideover__content-area strong {
     font-weight: 700;
 }
@@ -386,23 +406,7 @@
     font-style: italic;
 }
 
-.slideover__content-area p {
-    margin: 1em 0;
-}
-
-.slideover__content-area ul,
-.slideover__content-area ol {
-    margin: 1em 0;
-    padding-left: 2em;
-}
-
-.slideover__content-area blockquote {
-    border-left: 4px solid #083e44;
-    margin: 1em 0;
-    padding-left: 1em;
-    color: #555;
-}
-
+/* Code blocks */
 .slideover__content-area div.sourceCode {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     color: #003b4f;
