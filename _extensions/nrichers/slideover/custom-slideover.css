@@ -12,13 +12,25 @@
     border: var(--slideover-default-border) !important;
 }
 
-/* Right-aligned styling */
+/* Right-aligned emphasis border */
+.slideover--r.slideover__content {
+    border-left-width: 5px !important;
+}
 
-/* Bottom-aligned styling */
+/* Left-aligned emphasis border */
+.slideover--l.slideover__content {
+    border-right-width: 5px !important;
+}
 
-/* Left-aligned styling */
+/* Top-aligned emphasis border */
+.slideover--t.slideover__content {
+    border-bottom-width: 5px !important;
+}
 
-/* Top-aligned styling */
+/* Bottom-aligned emphasis border */
+.slideover--b.slideover__content {
+    border-top-width: 5px !important;
+}
 
 /* Bold text styling */
 

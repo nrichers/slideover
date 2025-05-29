@@ -68,7 +68,6 @@
 /* Global slideover container styling */
 .slideover__content {
     position: fixed;
-    /* border: 1px solid #083e44; */
     box-shadow: -2px 0 4px rgba(8, 62, 68, 0.1), 0 0 4px rgba(8, 62, 68, 0.1);
     transition: transform 0.3s ease-in-out;
     pointer-events: auto;
