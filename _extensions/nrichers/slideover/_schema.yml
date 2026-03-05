@@ -1,0 +1,21 @@
+$schema: https://m.canouil.dev/quarto-wizard/assets/schema/v1/extension-schema.json
+
+classes:
+  slideover--b:
+    description: Slide-over panel entering from the bottom.
+  slideover--r:
+    description: Slide-over panel entering from the right.
+  slideover--l:
+    description: Slide-over panel entering from the left.
+  slideover--t:
+    description: Slide-over panel entering from the top.
+  auto-collapse:
+    description: Auto-collapse slide-over after the default delay.
+  half:
+    description: Reduce slide-over size to half of the default.
+  third:
+    description: Reduce slide-over size to one-third of the default.
+  three-quarters:
+    description: Reduce slide-over size to three-quarters of the default.
+  embed:
+    description: Wrapper class for callouts/content embedded inside a slideover.
