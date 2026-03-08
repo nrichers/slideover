@@ -1,0 +1,20 @@
+{
+  "Bottom slideover": {
+    "prefix": "bottom",
+    "body": [
+      "::: {.slideover--b}",
+      "${1:Slideover content}",
+      ":::"
+    ],
+    "description": "Insert a bottom slide-over panel."
+  },
+  "Right slideover auto-collapse": {
+    "prefix": "right-auto",
+    "body": [
+      "::: {.slideover--r .auto-collapse-${1:10}}",
+      "${2:Slideover content}",
+      ":::"
+    ],
+    "description": "Insert a right slide-over panel with auto-collapse delay in seconds."
+  }
+}
